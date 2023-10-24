@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/editTextSystolic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Systolic Blood Pressure (mmHg)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextDiastolic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Diastolic Blood Pressure (mmHg)"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Data (Logcat ja puhelimen ruutu)"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSubmit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/showDataButton" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Data (ei tee mitään)"
+        android:layout_below="@id/buttonSubmit"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/readButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read Data (ei tee mitään)"
+        android:layout_below="@id/saveButton"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</LinearLayout>
